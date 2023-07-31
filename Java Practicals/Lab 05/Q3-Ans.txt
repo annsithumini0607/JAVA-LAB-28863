@@ -1,0 +1,16 @@
+Try following code. What is the outcome? Why?
+Class 01: 	Class 02: 
+final class Student {  	 	 class Undergraduate extends Student{}
+	final int marks = 100;
+	final void display();
+}
+
+
+--------------------------------------------------------------------------------
+			Answer
+---------------------------------------------------------------------------------
+
+* Because you cannot subclass final class, the code won't compile. The Student class has been declared final, which means that no other
+  class may extend it. The Undergraduate class won't compile as a result.
+
+* This is because final classes are intended to be immutable. A final class cannot be altered once it has been created. Because of this,   final classes  are highly helpful for ensuring that the code is predictable and consistent.
